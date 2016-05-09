@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "version": "1.0.0-rc2-3002678"
+    }
+  },
+  "runtimes": {
+      "centos.7-x64": {}
+   },
+  "frameworks": {
+    "netcoreapp1.0": {
+    }
+  }
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=linux build service
+After=network.target network-online.target
+
+[Service]
+Environment=HOME=/home/mtxuser
+ExecStart=/home/mtxuser/testHelloWorldbin/testHelloWorld
+Type=simple
+PIDFile=/home/mtxuser/testHelloWorldbin/testnetserv.pid
+
+[Install]
+WantedBy=default.target
