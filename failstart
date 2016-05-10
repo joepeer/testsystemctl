@@ -1,0 +1,852 @@
+-- Logs begin at Wed 2016-03-30 16:45:30 EDT, end at Tue 2016-05-10 10:36:05 EDT. --
+May 10 10:35:54 a2f226 sudo[8713]:  mtxuser : TTY=pts/0 ; PWD=/home/mtxuser/linuxBuilderSrc/linuxbuildservice ; USER=root ; COMMAND=/bin/systemctl start testnetserv.service
+May 10 10:35:54 a2f226 audit[8713]: USER_CMD pid=8713 uid=1000 auid=1000 ses=1 msg='cwd="/home/mtxuser/linuxBuilderSrc/linuxbuildservice" cmd=73797374656D63746C20737461727420746573746E6574736572762E73657276696365 terminal=pts/0 res=success'
+May 10 10:35:54 a2f226 audit[8713]: CRED_REFR pid=8713 uid=0 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_env,pam_fprintd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+May 10 10:35:54 a2f226 sudo[8713]: pam_systemd(sudo:session): Cannot create session: Already running in a session
+May 10 10:35:54 a2f226 sudo[8713]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 10 10:35:54 a2f226 audit[8713]: USER_START pid=8713 uid=0 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+May 10 10:35:54 a2f226 polkitd[906]: Registered Authentication Agent for unix-process:8714:6625265 (system bus name :1.313 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
+May 10 10:35:54 a2f226 systemd[1]: firewalld.service: Cannot add dependency job, ignoring: Unit firewalld.service is masked.
+May 10 10:35:54 a2f226 systemd[1]: Started linux build service.
+May 10 10:35:54 a2f226 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=testnetserv comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 10 10:35:54 a2f226 systemd[1]: Starting linux build service...
+May 10 10:35:54 a2f226 strace[8720]: execve("/home/mtxuser/testHelloWorldbin/testHelloWorld", ["/home/mtxuser/testHelloWorldbin/"...], [/* 3 vars */]) = 0
+May 10 10:35:54 a2f226 strace[8720]: brk(NULL)                               = 0x23b1000
+May 10 10:35:54 a2f226 strace[8720]: mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6d5da28000
+May 10 10:35:54 a2f226 strace[8720]: access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+May 10 10:35:54 a2f226 strace[8720]: open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+May 10 10:35:54 a2f226 strace[8720]: fstat(3, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6d5da12000
+May 10 10:35:54 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:54 a2f226 strace[8720]: open("/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+May 10 10:35:54 a2f226 strace[8720]: read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\16\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:54 a2f226 strace[8720]: fstat(3, {st_mode=S_IFREG|0755, st_size=19344, ...}) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6d5d605000
+May 10 10:35:54 a2f226 strace[8720]: mprotect(0x7f6d5d608000, 2093056, PROT_NONE) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(0x7f6d5d807000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6d5d807000
+May 10 10:35:54 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:54 a2f226 strace[8720]: open("/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+May 10 10:35:54 a2f226 strace[8720]: read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:54 a2f226 strace[8720]: fstat(3, {st_mode=S_IFREG|0755, st_size=148912, ...}) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(NULL, 2213040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6d5d3e8000
+May 10 10:35:54 a2f226 strace[8720]: mprotect(0x7f6d5d400000, 2093056, PROT_NONE) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(0x7f6d5d5ff000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f6d5d5ff000
+May 10 10:35:54 a2f226 strace[8720]: mmap(0x7f6d5d601000, 13488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6d5d601000
+May 10 10:35:54 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:54 a2f226 strace[8720]: open("/lib64/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+May 10 10:35:54 a2f226 strace[8720]: read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\237\10\0\0\0\0\0"..., 832) = 832
+May 10 10:35:54 a2f226 strace[8720]: fstat(3, {st_mode=S_IFREG|0755, st_size=1566600, ...}) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6d5da11000
+May 10 10:35:54 a2f226 strace[8720]: mmap(NULL, 3675328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6d5d066000
+May 10 10:35:54 a2f226 strace[8720]: mprotect(0x7f6d5d1d8000, 2097152, PROT_NONE) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(0x7f6d5d3d8000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x172000) = 0x7f6d5d3d8000
+May 10 10:35:54 a2f226 strace[8720]: mmap(0x7f6d5d3e4000, 13504, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6d5d3e4000
+May 10 10:35:54 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:54 a2f226 strace[8720]: open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+May 10 10:35:54 a2f226 strace[8720]: read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0PU\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:54 a2f226 strace[8720]: fstat(3, {st_mode=S_IFREG|0755, st_size=1140704, ...}) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(NULL, 3150104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6d5cd64000
+May 10 10:35:54 a2f226 strace[8720]: mprotect(0x7f6d5ce65000, 2093056, PROT_NONE) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(0x7f6d5d064000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x100000) = 0x7f6d5d064000
+May 10 10:35:54 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:54 a2f226 strace[8720]: open("/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+May 10 10:35:54 a2f226 strace[8720]: read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360*\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:54 a2f226 strace[8720]: fstat(3, {st_mode=S_IFREG|0755, st_size=92816, ...}) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(NULL, 2188320, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6d5cb4d000
+May 10 10:35:54 a2f226 strace[8720]: mprotect(0x7f6d5cb63000, 2093056, PROT_NONE) = 0
+May 10 10:35:54 a2f226 strace[8720]: mmap(0x7f6d5cd62000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f6d5cd62000
+May 10 10:35:54 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:54 a2f226 strace[8720]: open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+May 10 10:35:54 a2f226 strace[8720]: read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\6\2\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(3, {st_mode=S_IFREG|0755, st_size=2102224, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6d5da10000
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 3934784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6d5c78c000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5c943000, 2097152, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5cb43000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b7000) = 0x7f6d5cb43000
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5cb49000, 14912, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6d5cb49000
+May 10 10:35:55 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6d5da0f000
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6d5da0d000
+May 10 10:35:55 a2f226 strace[8720]: arch_prctl(ARCH_SET_FS, 0x7f6d5da0d740) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5cb43000, 16384, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5cd62000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5d064000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6d5da0c000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5d3d8000, 40960, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5d5ff000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5d807000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x615000, 4096, PROT_READ)     = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5da29000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: munmap(0x7f6d5da12000, 88269)           = 0
+May 10 10:35:55 a2f226 strace[8720]: set_tid_address(0x7f6d5da0da10)         = 8723
+May 10 10:35:55 a2f226 strace[8720]: set_robust_list(0x7f6d5da0da20, 24)     = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigaction(SIGRTMIN, {0x7f6d5d3edb50, [], SA_RESTORER|SA_SIGINFO, 0x7f6d5d3f89f0}, NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigaction(SIGRT_1, {0x7f6d5d3edbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f6d5d3f89f0}, NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+May 10 10:35:55 a2f226 strace[8720]: brk(NULL)                               = 0x23b1000
+May 10 10:35:55 a2f226 strace[8720]: brk(0x23e3000)                          = 0x23e3000
+May 10 10:35:55 a2f226 strace[8720]: futex(0x7f6d5d3e526c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+May 10 10:35:55 a2f226 strace[8720]: futex(0x7f6d5d3e5278, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc/self", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: readlink("/proc/self", "8723", 4095)    = 4
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc/8723", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc/8723/exe", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: readlink("/proc/8723/exe", "/home/mtxuser/testHelloWorldbin/"..., 4095) = 46
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/host/fxr", 0x7ffda1abd198) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/libhostfxr.so", {st_mode=S_IFREG|0764, st_size=910458, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: futex(0x7f6d5d8080c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/home/mtxuser/testHelloWorldbin/libhostfxr.so", O_RDONLY|O_CLOEXEC) = 3
+May 10 10:35:55 a2f226 strace[8720]: read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\360\3\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(3, {st_mode=S_IFREG|0764, st_size=910458, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2741848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6d5c4ee000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5c58a000, 2097152, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5c78a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9c000) = 0x7f6d5c78a000
+May 10 10:35:55 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5c78a000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc/self", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: readlink("/proc/self", "8723", 4095)    = 4
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc/8723", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc/8723/exe", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: readlink("/proc/8723/exe", "/home/mtxuser/testHelloWorldbin/"..., 4095) = 46
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/libcoreclr.so", {st_mode=S_IFREG|0764, st_size=8109616, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", {st_mode=S_IFREG|0764, st_size=109972, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.dll", {st_mode=S_IFREG|0764, st_size=4608, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.runtimeconfig.dev.json", 0x7ffda1abc428) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.runtimeconfig.json", {st_mode=S_IFREG|0764, st_size=26, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/home/mtxuser/testHelloWorldbin/testHelloWorld.runtimeconfig.json", O_RDONLY) = 3
+May 10 10:35:55 a2f226 strace[8720]: read(3, "{\n  \"runtimeOptions\": {}\n}", 8191) = 26
+May 10 10:35:55 a2f226 strace[8720]: read(3, "", 8191)                       = 0
+May 10 10:35:55 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", {st_mode=S_IFREG|0764, st_size=109972, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", O_RDONLY) = 3
+May 10 10:35:55 a2f226 strace[8720]: read(3, "{\n  \"runtimeTarget\": {\n    \"name"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "4027\"\n        }\n      },\n      \""..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "027\": {\n        \"dependencies\": "..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "time.native.System.Security.Cryp"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "2-24103\",\n          \"System.Runt"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: brk(NULL)                               = 0x23e3000
+May 10 10:35:55 a2f226 strace[8720]: brk(0x2404000)                          = 0x2404000
+May 10 10:35:55 a2f226 strace[8720]: read(3, "dencies\": {\n          \"System.Co"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "tem.Collections\": \"4.0.11-rc2-24"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "ime\": {\n          \"lib/netstanda"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "Debug\": \"4.0.11-rc2-24103\",\n    "..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "es.ResourceManager\": \"4.0.1-rc2-"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: brk(NULL)                               = 0x2404000
+May 10 10:35:55 a2f226 strace[8720]: brk(0x2425000)                          = 0x2425000
+May 10 10:35:55 a2f226 strace[8720]: read(3, "e,\n      \"sha512\": \"sha512-X44Pv"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "bj+fycoh2yYg0leFa7IG0/+Bs3g==\"\n "..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "2\": \"sha512-WJ/Fu0JBpC4FEKL7Jf3Q"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "ue,\n      \"sha512\": \"sha512-ISZ0"..., 8191) = 3489
+May 10 10:35:55 a2f226 strace[8720]: read(3, "", 8191)                       = 0
+May 10 10:35:55 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/libhostpolicy.so", {st_mode=S_IFREG|0764, st_size=1135049, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/libhostpolicy.so", {st_mode=S_IFREG|0764, st_size=1135049, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/home/mtxuser/testHelloWorldbin/libhostpolicy.so", O_RDONLY|O_CLOEXEC) = 3
+May 10 10:35:55 a2f226 strace[8720]: read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\366\4\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(3, {st_mode=S_IFREG|0764, st_size=1135049, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2889496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6d5c22c000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5c2ed000, 2093056, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5c4ec000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc0000) = 0x7f6d5c4ec000
+May 10 10:35:55 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5c4ec000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc/self", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: readlink("/proc/self", "8723", 4095)    = 4
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc/8723", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/proc/8723/exe", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: readlink("/proc/8723/exe", "/home/mtxuser/testHelloWorldbin/"..., 4095) = 46
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: brk(NULL)                               = 0x2425000
+May 10 10:35:55 a2f226 strace[8720]: brk(NULL)                               = 0x2425000
+May 10 10:35:55 a2f226 strace[8720]: brk(0x23e5000)                          = 0x23e5000
+May 10 10:35:55 a2f226 strace[8720]: brk(NULL)                               = 0x23e5000
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld.dll", {st_mode=S_IFREG|0764, st_size=4608, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/opt/coreservicing", 0x7ffda1abc778) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", {st_mode=S_IFREG|0764, st_size=109972, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", O_RDONLY) = 3
+May 10 10:35:55 a2f226 strace[8720]: read(3, "{\n  \"runtimeTarget\": {\n    \"name"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "4027\"\n        }\n      },\n      \""..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "027\": {\n        \"dependencies\": "..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "time.native.System.Security.Cryp"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "2-24103\",\n          \"System.Runt"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: brk(NULL)                               = 0x23e5000
+May 10 10:35:55 a2f226 strace[8720]: brk(0x2406000)                          = 0x2406000
+May 10 10:35:55 a2f226 strace[8720]: read(3, "dencies\": {\n          \"System.Co"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "tem.Collections\": \"4.0.11-rc2-24"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "ime\": {\n          \"lib/netstanda"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "Debug\": \"4.0.11-rc2-24103\",\n    "..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "es.ResourceManager\": \"4.0.1-rc2-"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: brk(NULL)                               = 0x2406000
+May 10 10:35:55 a2f226 strace[8720]: brk(0x2427000)                          = 0x2427000
+May 10 10:35:55 a2f226 strace[8720]: read(3, "e,\n      \"sha512\": \"sha512-X44Pv"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "bj+fycoh2yYg0leFa7IG0/+Bs3g==\"\n "..., 8191) = 8191
+May 10 10:35:55 a2f226 sudo[8713]: pam_unix(sudo:session): session closed for user root
+May 10 10:35:55 a2f226 audit[8713]: USER_END pid=8713 uid=0 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+May 10 10:35:55 a2f226 audit[8713]: CRED_DISP pid=8713 uid=0 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_env,pam_fprintd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+May 10 10:35:55 a2f226 strace[8720]: read(3, "2\": \"sha512-WJ/Fu0JBpC4FEKL7Jf3Q"..., 8191) = 8191
+May 10 10:35:55 a2f226 strace[8720]: read(3, "ue,\n      \"sha512\": \"sha512-ISZ0"..., 8191) = 3489
+May 10 10:35:55 a2f226 strace[8720]: read(3, "", 8191)                       = 0
+May 10 10:35:55 a2f226 strace[8720]: brk(NULL)                               = 0x2427000
+May 10 10:35:55 a2f226 strace[8720]: brk(0x2448000)                          = 0x2448000
+May 10 10:35:55 a2f226 strace[8720]: close(3)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/libcoreclr.so", {st_mode=S_IFREG|0764, st_size=8109616, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/home/mtxuser/testHelloWorldbin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+May 10 10:35:55 a2f226 strace[8720]: fstat(3, {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: getdents(3, /* 123 entries */, 32768)   = 6248
+May 10 10:35:55 a2f226 strace[8720]: getdents(3, /* 0 entries */, 32768)     = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/Microsoft.CSharp.dll", {st_mode=S_IFREG|0764, st_size=446664, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/Microsoft.CodeAnalysis.CSharp.dll", {st_mode=S_IFREG|0764, st_size=4204456, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/Microsoft.CodeAnalysis.dll", {st_mode=S_IFREG|0764, st_size=2027416, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/Microsoft.CodeAnalysis.VisualBasic.dll", {st_mode=S_IFREG|0764, st_size=5056432, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/Microsoft.VisualBasic.dll", {st_mode=S_IFREG|0764, st_size=188120, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/Microsoft.Win32.Registry.dll", {st_mode=S_IFREG|0764, st_size=24296, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Buffers.dll", {st_mode=S_IFREG|0764, st_size=29008, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Collections.Concurrent.dll", {st_mode=S_IFREG|0764, st_size=92912, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Collections.Immutable.dll", {st_mode=S_IFREG|0764, st_size=198896, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 systemd[1]: testnetserv.service: Main process exited, code=exited, status=137/n/a
+May 10 10:35:55 a2f226 audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=testnetserv comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+May 10 10:35:55 a2f226 systemd[1]: testnetserv.service: Unit entered failed state.
+May 10 10:35:55 a2f226 systemd[1]: testnetserv.service: Failed with result 'exit-code'.
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Collections.NonGeneric.dll", {st_mode=S_IFREG|0764, st_size=88472, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Collections.Specialized.dll", {st_mode=S_IFREG|0764, st_size=45464, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.ComponentModel.Annotations.dll", {st_mode=S_IFREG|0764, st_size=82856, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.ComponentModel.dll", {st_mode=S_IFREG|0764, st_size=21720, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.DiagnosticSource.dll", {st_mode=S_IFREG|0764, st_size=31152, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.FileVersionInfo.dll", {st_mode=S_IFREG|0764, st_size=28432, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.Process.dll", {st_mode=S_IFREG|0764, st_size=88464, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.StackTrace.dll", {st_mode=S_IFREG|0764, st_size=22936, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Dynamic.Runtime.dll", {st_mode=S_IFREG|0764, st_size=112864, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Globalization.Extensions.dll", {st_mode=S_IFREG|0764, st_size=30464, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.IO.Compression.ZipFile.dll", {st_mode=S_IFREG|0764, st_size=29080, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.IO.Compression.dll", {st_mode=S_IFREG|0764, st_size=86744, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.IO.FileSystem.Primitives.dll", {st_mode=S_IFREG|0764, st_size=21920, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.IO.FileSystem.Watcher.dll", {st_mode=S_IFREG|0764, st_size=52984, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.IO.MemoryMappedFiles.dll", {st_mode=S_IFREG|0764, st_size=50928, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.IO.UnmanagedMemoryStream.dll", {st_mode=S_IFREG|0764, st_size=42400, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Linq.Expressions.dll", {st_mode=S_IFREG|0764, st_size=461024, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Linq.Parallel.dll", {st_mode=S_IFREG|0764, st_size=223448, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Linq.Queryable.dll", {st_mode=S_IFREG|0764, st_size=69840, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Linq.dll", {st_mode=S_IFREG|0764, st_size=126792, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Net.Http.dll", {st_mode=S_IFREG|0764, st_size=271704, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Net.NameResolution.dll", {st_mode=S_IFREG|0764, st_size=68488, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Net.Requests.dll", {st_mode=S_IFREG|0764, st_size=55152, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Net.Security.dll", {st_mode=S_IFREG|0764, st_size=223080, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Net.WebHeaderCollection.dll", {st_mode=S_IFREG|0764, st_size=39680, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Numerics.Vectors.dll", {st_mode=S_IFREG|0764, st_size=157056, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.ObjectModel.dll", {st_mode=S_IFREG|0764, st_size=48848, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.DispatchProxy.dll", {st_mode=S_IFREG|0764, st_size=37784, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Emit.ILGeneration.dll", {st_mode=S_IFREG|0764, st_size=22440, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Emit.Lightweight.dll", {st_mode=S_IFREG|0764, st_size=21936, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Emit.dll", {st_mode=S_IFREG|0764, st_size=22392, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Metadata.dll", {st_mode=S_IFREG|0764, st_size=429296, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.TypeExtensions.dll", {st_mode=S_IFREG|0764, st_size=28584, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Resources.Reader.dll", {st_mode=S_IFREG|0764, st_size=32992, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.InteropServices.PInvoke.dll", {st_mode=S_IFREG|0764, st_size=29624, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.Loader.dll", {st_mode=S_IFREG|0764, st_size=21720, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.Numerics.dll", {st_mode=S_IFREG|0764, st_size=70872, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Claims.dll", {st_mode=S_IFREG|0764, st_size=57208, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Algorithms.dll", {st_mode=S_IFREG|0764, st_size=65976, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Cng.dll", {st_mode=S_IFREG|0764, st_size=29608, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Csp.dll", {st_mode=S_IFREG|0764, st_size=24328, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Encoding.dll", {st_mode=S_IFREG|0764, st_size=49432, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.OpenSsl.dll", {st_mode=S_IFREG|0764, st_size=50456, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Primitives.dll", {st_mode=S_IFREG|0764, st_size=44992, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.X509Certificates.dll", {st_mode=S_IFREG|0764, st_size=161600, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Principal.Windows.dll", {st_mode=S_IFREG|0764, st_size=28936, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Security.Principal.dll", {st_mode=S_IFREG|0764, st_size=21224, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.CodePages.dll", {st_mode=S_IFREG|0764, st_size=759552, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Text.RegularExpressions.dll", {st_mode=S_IFREG|0764, st_size=112896, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Overlapped.dll", {st_mode=S_IFREG|0764, st_size=23280, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.Dataflow.dll", {st_mode=S_IFREG|0764, st_size=177568, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.Extensions.dll", {st_mode=S_IFREG|0764, st_size=24488, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.Parallel.dll", {st_mode=S_IFREG|0764, st_size=58112, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Thread.dll", {st_mode=S_IFREG|0764, st_size=22400, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Threading.ThreadPool.dll", {st_mode=S_IFREG|0764, st_size=22416, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Threading.dll", {st_mode=S_IFREG|0764, st_size=50016, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Xml.ReaderWriter.dll", {st_mode=S_IFREG|0764, st_size=600800, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Xml.XDocument.dll", {st_mode=S_IFREG|0764, st_size=110800, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Xml.XPath.XDocument.dll", {st_mode=S_IFREG|0764, st_size=36752, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Xml.XPath.dll", {st_mode=S_IFREG|0764, st_size=187232, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Xml.XmlDocument.dll", {st_mode=S_IFREG|0764, st_size=137080, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.AppContext.dll", {st_mode=S_IFREG|0764, st_size=21856, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Collections.dll", {st_mode=S_IFREG|0764, st_size=97992, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.Tools.dll", {st_mode=S_IFREG|0764, st_size=22400, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.Tracing.dll", {st_mode=S_IFREG|0764, st_size=36744, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Globalization.Calendars.dll", {st_mode=S_IFREG|0764, st_size=22424, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Globalization.dll", {st_mode=S_IFREG|0764, st_size=22376, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.IO.dll", {st_mode=S_IFREG|0764, st_size=39232, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Extensions.dll", {st_mode=S_IFREG|0764, st_size=24824, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Primitives.dll", {st_mode=S_IFREG|0764, st_size=22264, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.dll", {st_mode=S_IFREG|0764, st_size=22888, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Resources.ResourceManager.dll", {st_mode=S_IFREG|0764, st_size=22272, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.Handles.dll", {st_mode=S_IFREG|0764, st_size=22904, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.InteropServices.dll", {st_mode=S_IFREG|0764, st_size=32152, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.dll", {st_mode=S_IFREG|0764, st_size=39768, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.Extensions.dll", {st_mode=S_IFREG|0764, st_size=22432, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.dll", {st_mode=S_IFREG|0764, st_size=22384, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.dll", {st_mode=S_IFREG|0764, st_size=26488, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Timer.dll", {st_mode=S_IFREG|0764, st_size=21880, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/mscorlib.ni.dll", {st_mode=S_IFREG|0764, st_size=9446408, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/Microsoft.Win32.Primitives.dll", {st_mode=S_IFREG|0764, st_size=25320, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Console.dll", {st_mode=S_IFREG|0764, st_size=92856, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.Debug.dll", {st_mode=S_IFREG|0764, st_size=40840, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.IO.FileSystem.dll", {st_mode=S_IFREG|0764, st_size=95080, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Net.Primitives.dll", {st_mode=S_IFREG|0764, st_size=307920, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Net.Sockets.dll", {st_mode=S_IFREG|0764, st_size=219848, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Private.Uri.dll", {st_mode=S_IFREG|0764, st_size=125288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.Extensions.dll", {st_mode=S_IFREG|0764, st_size=73448, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.InteropServices.RuntimeInformation.dll", {st_mode=S_IFREG|0764, st_size=27112, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld.dll", {st_mode=S_IFREG|0764, st_size=4608, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin/mscorlib.ni.dll", {st_mode=S_IFREG|0764, st_size=9446408, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/home/mtxuser/testHelloWorldbin/libcoreclr.so", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\35\7\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0764, st_size=8109616, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 10297768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5b859000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5bfdf000, 2097152, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5c1df000, 221184, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x786000) = 0x7f6d5c1df000
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5c215000, 90536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6d5c215000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5da29000, 3572, PROT_READ|PROT_WRITE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5da29000, 3572, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7ffda1abd000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC|PROT_GROWSDOWN) = 0
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f6d5da12000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/lib64/librt.so.1", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P!\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0755, st_size=43304, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2128800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5b651000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b658000, 2093056, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5b857000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x6000) = 0x7f6d5b857000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/lib64/libuuid.so.1", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\25\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0755, st_size=19528, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2113552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5b44c000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b450000, 2093056, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5b64f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3000) = 0x7f6d5b64f000
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5b650000, 16, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6d5b650000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/lib64/libunwind.so.8", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\25\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0755, st_size=44064, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2198984, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5b233000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b23d000, 2093056, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5b43c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x9000) = 0x7f6d5b43c000
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5b43e000, 56776, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6d5b43e000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/lib64/libunwind-x86_64.so.8", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \25\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0755, st_size=64632, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2219400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5b015000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b024000, 2093056, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5b223000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xe000) = 0x7f6d5b223000
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5b225000, 56712, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6d5b225000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b43c000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b223000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b64f000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b857000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b859000, 7888896, PROT_READ|PROT_WRITE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5b859000, 7888896, PROT_READ|PROT_EXEC) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5c1df000, 180224, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/home/mtxuser/testHelloWorldbin/libcoreclrtraceptprovider.so", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\205\2\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0764, st_size=681696, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2776856, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5ad6f000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5adc5000, 2097152, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5afc5000, 327680, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x56000) = 0x7f6d5afc5000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/lib64/liblttng-ust.so.0", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \227\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0755, st_size=367296, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2459616, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5ab16000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5ab68000, 2093056, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5ad67000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x51000) = 0x7f6d5ad67000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/lib64/liblttng-ust-tracepoint.so.0", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\27\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0755, st_size=44040, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2203864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5a8fb000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5a904000, 2097152, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5ab04000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x9000) = 0x7f6d5ab04000
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5ab06000, 61656, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6d5ab06000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/lib64/liburcu-bp.so.2", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\36\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0755, st_size=32112, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2126576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5a6f3000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5a6f9000, 2097152, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5a8f9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x6000) = 0x7f6d5a8f9000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/lib64/liburcu-cds.so.2", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\25\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0755, st_size=31872, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2125856, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5a4eb000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5a4f1000, 2097152, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5a6f1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x6000) = 0x7f6d5a6f1000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: open("/lib64/liburcu-common.so.2", O_RDONLY|O_CLOEXEC) = 4
+May 10 10:35:55 a2f226 strace[8720]: read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\17\0\0\0\0\0\0"..., 832) = 832
+May 10 10:35:55 a2f226 strace[8720]: fstat(4, {st_mode=S_IFREG|0755, st_size=15064, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2109448, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6d5a2e7000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5a2ea000, 2093056, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5a4e9000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x2000) = 0x7f6d5a4e9000
+May 10 10:35:55 a2f226 strace[8720]: mmap(0x7f6d5a4ea000, 8, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6d5a4ea000
+May 10 10:35:55 a2f226 strace[8720]: close(4)                                = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5a4e9000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5a6f1000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5a8f9000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5ab04000, 4096, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5ad67000, 12288, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d5afc5000, 323584, PROT_READ) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 2080, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6d5da0b000
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: munmap(0x7f6d5da12000, 88269)           = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: getuid()                                = 0
+May 10 10:35:55 a2f226 strace[8720]: geteuid()                               = 0
+May 10 10:35:55 a2f226 strace[8720]: geteuid()                               = 0
+May 10 10:35:55 a2f226 strace[8720]: getuid()                                = 0
+May 10 10:35:55 a2f226 strace[8720]: getegid()                               = 0
+May 10 10:35:55 a2f226 strace[8720]: getgid()                                = 0
+May 10 10:35:55 a2f226 strace[8720]: geteuid()                               = 0
+May 10 10:35:55 a2f226 strace[8720]: getuid()                                = 0
+May 10 10:35:55 a2f226 strace[8720]: getegid()                               = 0
+May 10 10:35:55 a2f226 strace[8720]: getgid()                                = 0
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: write(2, "libust[8723/8723]: Warning: HOME"..., 149libust[8723/8723]: Warning: HOME environment variable not set. Disabling LTTng-UST per-user tracing. (in setup_local_apps() at lttng-ust-comm.c:386)
+May 10 10:35:55 a2f226 strace[8720]: ) = 149
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f6d59ae6000
+May 10 10:35:55 a2f226 strace[8720]: mprotect(0x7f6d59ae6000, 4096, PROT_NONE) = 0
+May 10 10:35:55 a2f226 strace[8720]: clone(child_stack=0x7f6d5a2e5fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f6d5a2e69d0, tls=0x7f6d5a2e6700, child_tidptr=0x7f6d5a2e69d0) = 8734
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: futex(0x7f6d5ad6e5e0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {1462890958, 240247441}, ffffffff) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=4*1024}) = 0
+May 10 10:35:55 a2f226 strace[8720]: setrlimit(RLIMIT_NOFILE, {rlim_cur=4*1024, rlim_max=4*1024}) = 0
+May 10 10:35:55 a2f226 strace[8720]: mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6d5d9cb000
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: gettid()                                = 8723
+May 10 10:35:55 a2f226 strace[8720]: pipe([4, 5])                            = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: geteuid()                               = 0
+May 10 10:35:55 a2f226 strace[8720]: getegid()                               = 0
+May 10 10:35:55 a2f226 strace[8720]: stat("/usr/lib64/ccache//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/usr/local/bin//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/usr/local/sbin//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/usr/bin//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/usr/sbin//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/opt/matrox_imaging/mil/../tools//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/.local/bin//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/bin//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/usr/share/dotnet//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/opt/matrox_imaging/mil/../tools//home/mtxuser/testHelloWorldbin/testHelloWorld", 0x7ffda1abbfd0) = -1 ENOENT (No such file or directory)
+May 10 10:35:55 a2f226 strace[8720]: stat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+May 10 10:35:55 a2f226 strace[8720]: geteuid()                               = 0
+May 10 10:35:55 a2f226 strace[8720]: getegid()                               = 0
+May 10 10:35:55 a2f226 strace[8720]: munmap(0x7f6d5d9cb000, 262144)          = 0
+May 10 10:35:55 a2f226 strace[8720]: write(2, "Failed to initialize CoreCLR, HR"..., 49Failed to initialize CoreCLR, HRESULT: 0x8007001F) = 49
+May 10 10:35:55 a2f226 strace[8720]: write(2, "\n", 1
+May 10 10:35:55 a2f226 strace[8720]: )                       = 1
+May 10 10:35:55 a2f226 strace[8720]: munmap(0x7f6d5c22c000, 2889496)         = 0
+May 10 10:35:55 a2f226 strace[8720]: munmap(0x7f6d5c4ee000, 2741848)         = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+May 10 10:35:55 a2f226 strace[8720]: exit_group(-2147450743)                 = ?
+May 10 10:35:55 a2f226 strace[8720]: +++ exited with 137 +++
+May 10 10:35:55 a2f226 polkitd[906]: Unregistered Authentication Agent for unix-process:8714:6625265 (system bus name :1.313, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)

@@ -1,0 +1,1543 @@
+execve("/home/mtxuser/testHelloWorldbin/testHelloWorld", ["/home/mtxuser/testHelloWorldbin/"...], [/* 56 vars */]) = 0
+brk(NULL)                               = 0x21c6000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cf7000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fed07ce1000
+close(3)                                = 0
+open("/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=19344, ...}) = 0
+mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fed078d4000
+mprotect(0x7fed078d7000, 2093056, PROT_NONE) = 0
+mmap(0x7fed07ad6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fed07ad6000
+close(3)                                = 0
+open("/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=148912, ...}) = 0
+mmap(NULL, 2213040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fed076b7000
+mprotect(0x7fed076cf000, 2093056, PROT_NONE) = 0
+mmap(0x7fed078ce000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fed078ce000
+mmap(0x7fed078d0000, 13488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed078d0000
+close(3)                                = 0
+open("/lib64/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\237\10\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1566600, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07ce0000
+mmap(NULL, 3675328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fed07335000
+mprotect(0x7fed074a7000, 2097152, PROT_NONE) = 0
+mmap(0x7fed076a7000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x172000) = 0x7fed076a7000
+mmap(0x7fed076b3000, 13504, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed076b3000
+close(3)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0PU\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1140704, ...}) = 0
+mmap(NULL, 3150104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fed07033000
+mprotect(0x7fed07134000, 2093056, PROT_NONE) = 0
+mmap(0x7fed07333000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x100000) = 0x7fed07333000
+close(3)                                = 0
+open("/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360*\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=92816, ...}) = 0
+mmap(NULL, 2188320, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fed06e1c000
+mprotect(0x7fed06e32000, 2093056, PROT_NONE) = 0
+mmap(0x7fed07031000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7fed07031000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\6\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2102224, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cdf000
+mmap(NULL, 3934784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fed06a5b000
+mprotect(0x7fed06c12000, 2097152, PROT_NONE) = 0
+mmap(0x7fed06e12000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b7000) = 0x7fed06e12000
+mmap(0x7fed06e18000, 14912, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed06e18000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cde000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cdc000
+arch_prctl(ARCH_SET_FS, 0x7fed07cdc740) = 0
+mprotect(0x7fed06e12000, 16384, PROT_READ) = 0
+mprotect(0x7fed07031000, 4096, PROT_READ) = 0
+mprotect(0x7fed07333000, 4096, PROT_READ) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cdb000
+mprotect(0x7fed076a7000, 40960, PROT_READ) = 0
+mprotect(0x7fed078ce000, 4096, PROT_READ) = 0
+mprotect(0x7fed07ad6000, 4096, PROT_READ) = 0
+mprotect(0x615000, 4096, PROT_READ)     = 0
+mprotect(0x7fed07cf8000, 4096, PROT_READ) = 0
+munmap(0x7fed07ce1000, 88269)           = 0
+set_tid_address(0x7fed07cdca10)         = 8528
+set_robust_list(0x7fed07cdca20, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7fed076bcb50, [], SA_RESTORER|SA_SIGINFO, 0x7fed076c79f0}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7fed076bcbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fed076c79f0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x21c6000
+brk(0x21f8000)                          = 0x21f8000
+futex(0x7fed076b426c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fed076b4278, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+lstat("/proc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/proc/self", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/proc/self", "8528", 4095)    = 4
+lstat("/proc/8528", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/proc/8528/exe", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/proc/8528/exe", "/home/mtxuser/testHelloWorldbin/"..., 4095) = 46
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/host/fxr", 0x7ffd6d347228) = -1 ENOENT (No such file or directory)
+stat("/home/mtxuser/testHelloWorldbin/libhostfxr.so", {st_mode=S_IFREG|0764, st_size=910458, ...}) = 0
+futex(0x7fed07ad70c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/home/mtxuser/testHelloWorldbin/libhostfxr.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\360\3\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0764, st_size=910458, ...}) = 0
+mmap(NULL, 2741848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fed067bd000
+mprotect(0x7fed06859000, 2097152, PROT_NONE) = 0
+mmap(0x7fed06a59000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9c000) = 0x7fed06a59000
+close(3)                                = 0
+mprotect(0x7fed06a59000, 4096, PROT_READ) = 0
+lstat("/proc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/proc/self", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/proc/self", "8528", 4095)    = 4
+lstat("/proc/8528", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/proc/8528/exe", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/proc/8528/exe", "/home/mtxuser/testHelloWorldbin/"..., 4095) = 46
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/libcoreclr.so", {st_mode=S_IFREG|0764, st_size=8109616, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", {st_mode=S_IFREG|0764, st_size=109972, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.dll", {st_mode=S_IFREG|0764, st_size=4608, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.runtimeconfig.dev.json", 0x7ffd6d3464b8) = -1 ENOENT (No such file or directory)
+stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.runtimeconfig.json", {st_mode=S_IFREG|0764, st_size=26, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/testHelloWorld.runtimeconfig.json", O_RDONLY) = 3
+read(3, "{\n  \"runtimeOptions\": {}\n}", 8191) = 26
+read(3, "", 8191)                       = 0
+close(3)                                = 0
+stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", {st_mode=S_IFREG|0764, st_size=109972, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", O_RDONLY) = 3
+read(3, "{\n  \"runtimeTarget\": {\n    \"name"..., 8191) = 8191
+read(3, "4027\"\n        }\n      },\n      \""..., 8191) = 8191
+read(3, "027\": {\n        \"dependencies\": "..., 8191) = 8191
+read(3, "time.native.System.Security.Cryp"..., 8191) = 8191
+read(3, "2-24103\",\n          \"System.Runt"..., 8191) = 8191
+brk(NULL)                               = 0x21f8000
+brk(0x2219000)                          = 0x2219000
+read(3, "dencies\": {\n          \"System.Co"..., 8191) = 8191
+read(3, "tem.Collections\": \"4.0.11-rc2-24"..., 8191) = 8191
+read(3, "ime\": {\n          \"lib/netstanda"..., 8191) = 8191
+read(3, "Debug\": \"4.0.11-rc2-24103\",\n    "..., 8191) = 8191
+read(3, "es.ResourceManager\": \"4.0.1-rc2-"..., 8191) = 8191
+brk(NULL)                               = 0x2219000
+brk(0x223a000)                          = 0x223a000
+read(3, "e,\n      \"sha512\": \"sha512-X44Pv"..., 8191) = 8191
+read(3, "bj+fycoh2yYg0leFa7IG0/+Bs3g==\"\n "..., 8191) = 8191
+read(3, "2\": \"sha512-WJ/Fu0JBpC4FEKL7Jf3Q"..., 8191) = 8191
+read(3, "ue,\n      \"sha512\": \"sha512-ISZ0"..., 8191) = 3489
+read(3, "", 8191)                       = 0
+close(3)                                = 0
+stat("/home/mtxuser/testHelloWorldbin/libhostpolicy.so", {st_mode=S_IFREG|0764, st_size=1135049, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/libhostpolicy.so", {st_mode=S_IFREG|0764, st_size=1135049, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/libhostpolicy.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\366\4\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0764, st_size=1135049, ...}) = 0
+mmap(NULL, 2889496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fed064fb000
+mprotect(0x7fed065bc000, 2093056, PROT_NONE) = 0
+mmap(0x7fed067bb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc0000) = 0x7fed067bb000
+close(3)                                = 0
+mprotect(0x7fed067bb000, 4096, PROT_READ) = 0
+lstat("/proc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/proc/self", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/proc/self", "8528", 4095)    = 4
+lstat("/proc/8528", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/proc/8528/exe", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/proc/8528/exe", "/home/mtxuser/testHelloWorldbin/"..., 4095) = 46
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+brk(NULL)                               = 0x223a000
+brk(NULL)                               = 0x223a000
+brk(0x21fa000)                          = 0x21fa000
+brk(NULL)                               = 0x21fa000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld.dll", {st_mode=S_IFREG|0764, st_size=4608, ...}) = 0
+stat("/opt/coreservicing", 0x7ffd6d346808) = -1 ENOENT (No such file or directory)
+stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", {st_mode=S_IFREG|0764, st_size=109972, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/testHelloWorld.deps.json", O_RDONLY) = 3
+read(3, "{\n  \"runtimeTarget\": {\n    \"name"..., 8191) = 8191
+read(3, "4027\"\n        }\n      },\n      \""..., 8191) = 8191
+read(3, "027\": {\n        \"dependencies\": "..., 8191) = 8191
+read(3, "time.native.System.Security.Cryp"..., 8191) = 8191
+read(3, "2-24103\",\n          \"System.Runt"..., 8191) = 8191
+brk(NULL)                               = 0x21fa000
+brk(0x221b000)                          = 0x221b000
+read(3, "dencies\": {\n          \"System.Co"..., 8191) = 8191
+read(3, "tem.Collections\": \"4.0.11-rc2-24"..., 8191) = 8191
+read(3, "ime\": {\n          \"lib/netstanda"..., 8191) = 8191
+read(3, "Debug\": \"4.0.11-rc2-24103\",\n    "..., 8191) = 8191
+read(3, "es.ResourceManager\": \"4.0.1-rc2-"..., 8191) = 8191
+brk(NULL)                               = 0x221b000
+brk(0x223c000)                          = 0x223c000
+read(3, "e,\n      \"sha512\": \"sha512-X44Pv"..., 8191) = 8191
+read(3, "bj+fycoh2yYg0leFa7IG0/+Bs3g==\"\n "..., 8191) = 8191
+read(3, "2\": \"sha512-WJ/Fu0JBpC4FEKL7Jf3Q"..., 8191) = 8191
+read(3, "ue,\n      \"sha512\": \"sha512-ISZ0"..., 8191) = 3489
+read(3, "", 8191)                       = 0
+brk(NULL)                               = 0x223c000
+brk(0x225d000)                          = 0x225d000
+close(3)                                = 0
+stat("/home/mtxuser/testHelloWorldbin/libcoreclr.so", {st_mode=S_IFREG|0764, st_size=8109616, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+getdents(3, /* 123 entries */, 32768)   = 6248
+getdents(3, /* 0 entries */, 32768)     = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/Microsoft.CSharp.dll", {st_mode=S_IFREG|0764, st_size=446664, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/Microsoft.CodeAnalysis.CSharp.dll", {st_mode=S_IFREG|0764, st_size=4204456, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/Microsoft.CodeAnalysis.dll", {st_mode=S_IFREG|0764, st_size=2027416, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/Microsoft.CodeAnalysis.VisualBasic.dll", {st_mode=S_IFREG|0764, st_size=5056432, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/Microsoft.VisualBasic.dll", {st_mode=S_IFREG|0764, st_size=188120, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/Microsoft.Win32.Registry.dll", {st_mode=S_IFREG|0764, st_size=24296, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Buffers.dll", {st_mode=S_IFREG|0764, st_size=29008, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Collections.Concurrent.dll", {st_mode=S_IFREG|0764, st_size=92912, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Collections.Immutable.dll", {st_mode=S_IFREG|0764, st_size=198896, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Collections.NonGeneric.dll", {st_mode=S_IFREG|0764, st_size=88472, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Collections.Specialized.dll", {st_mode=S_IFREG|0764, st_size=45464, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.ComponentModel.Annotations.dll", {st_mode=S_IFREG|0764, st_size=82856, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.ComponentModel.dll", {st_mode=S_IFREG|0764, st_size=21720, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.DiagnosticSource.dll", {st_mode=S_IFREG|0764, st_size=31152, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.FileVersionInfo.dll", {st_mode=S_IFREG|0764, st_size=28432, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.Process.dll", {st_mode=S_IFREG|0764, st_size=88464, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.StackTrace.dll", {st_mode=S_IFREG|0764, st_size=22936, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Dynamic.Runtime.dll", {st_mode=S_IFREG|0764, st_size=112864, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Globalization.Extensions.dll", {st_mode=S_IFREG|0764, st_size=30464, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.IO.Compression.ZipFile.dll", {st_mode=S_IFREG|0764, st_size=29080, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.IO.Compression.dll", {st_mode=S_IFREG|0764, st_size=86744, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.IO.FileSystem.Primitives.dll", {st_mode=S_IFREG|0764, st_size=21920, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.IO.FileSystem.Watcher.dll", {st_mode=S_IFREG|0764, st_size=52984, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.IO.MemoryMappedFiles.dll", {st_mode=S_IFREG|0764, st_size=50928, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.IO.UnmanagedMemoryStream.dll", {st_mode=S_IFREG|0764, st_size=42400, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Linq.Expressions.dll", {st_mode=S_IFREG|0764, st_size=461024, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Linq.Parallel.dll", {st_mode=S_IFREG|0764, st_size=223448, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Linq.Queryable.dll", {st_mode=S_IFREG|0764, st_size=69840, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Linq.dll", {st_mode=S_IFREG|0764, st_size=126792, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Net.Http.dll", {st_mode=S_IFREG|0764, st_size=271704, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Net.NameResolution.dll", {st_mode=S_IFREG|0764, st_size=68488, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Net.Requests.dll", {st_mode=S_IFREG|0764, st_size=55152, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Net.Security.dll", {st_mode=S_IFREG|0764, st_size=223080, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Net.WebHeaderCollection.dll", {st_mode=S_IFREG|0764, st_size=39680, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Numerics.Vectors.dll", {st_mode=S_IFREG|0764, st_size=157056, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.ObjectModel.dll", {st_mode=S_IFREG|0764, st_size=48848, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.DispatchProxy.dll", {st_mode=S_IFREG|0764, st_size=37784, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Emit.ILGeneration.dll", {st_mode=S_IFREG|0764, st_size=22440, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Emit.Lightweight.dll", {st_mode=S_IFREG|0764, st_size=21936, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Emit.dll", {st_mode=S_IFREG|0764, st_size=22392, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Metadata.dll", {st_mode=S_IFREG|0764, st_size=429296, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.TypeExtensions.dll", {st_mode=S_IFREG|0764, st_size=28584, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Resources.Reader.dll", {st_mode=S_IFREG|0764, st_size=32992, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.InteropServices.PInvoke.dll", {st_mode=S_IFREG|0764, st_size=29624, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.Loader.dll", {st_mode=S_IFREG|0764, st_size=21720, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.Numerics.dll", {st_mode=S_IFREG|0764, st_size=70872, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Claims.dll", {st_mode=S_IFREG|0764, st_size=57208, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Algorithms.dll", {st_mode=S_IFREG|0764, st_size=65976, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Cng.dll", {st_mode=S_IFREG|0764, st_size=29608, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Csp.dll", {st_mode=S_IFREG|0764, st_size=24328, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Encoding.dll", {st_mode=S_IFREG|0764, st_size=49432, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.OpenSsl.dll", {st_mode=S_IFREG|0764, st_size=50456, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.Primitives.dll", {st_mode=S_IFREG|0764, st_size=44992, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Cryptography.X509Certificates.dll", {st_mode=S_IFREG|0764, st_size=161600, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Principal.Windows.dll", {st_mode=S_IFREG|0764, st_size=28936, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Security.Principal.dll", {st_mode=S_IFREG|0764, st_size=21224, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.CodePages.dll", {st_mode=S_IFREG|0764, st_size=759552, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Text.RegularExpressions.dll", {st_mode=S_IFREG|0764, st_size=112896, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Overlapped.dll", {st_mode=S_IFREG|0764, st_size=23280, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.Dataflow.dll", {st_mode=S_IFREG|0764, st_size=177568, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.Extensions.dll", {st_mode=S_IFREG|0764, st_size=24488, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.Parallel.dll", {st_mode=S_IFREG|0764, st_size=58112, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Thread.dll", {st_mode=S_IFREG|0764, st_size=22400, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Threading.ThreadPool.dll", {st_mode=S_IFREG|0764, st_size=22416, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Threading.dll", {st_mode=S_IFREG|0764, st_size=50016, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Xml.ReaderWriter.dll", {st_mode=S_IFREG|0764, st_size=600800, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Xml.XDocument.dll", {st_mode=S_IFREG|0764, st_size=110800, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Xml.XPath.XDocument.dll", {st_mode=S_IFREG|0764, st_size=36752, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Xml.XPath.dll", {st_mode=S_IFREG|0764, st_size=187232, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Xml.XmlDocument.dll", {st_mode=S_IFREG|0764, st_size=137080, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.AppContext.dll", {st_mode=S_IFREG|0764, st_size=21856, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Collections.dll", {st_mode=S_IFREG|0764, st_size=97992, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.Tools.dll", {st_mode=S_IFREG|0764, st_size=22400, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.Tracing.dll", {st_mode=S_IFREG|0764, st_size=36744, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Globalization.Calendars.dll", {st_mode=S_IFREG|0764, st_size=22424, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Globalization.dll", {st_mode=S_IFREG|0764, st_size=22376, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.IO.dll", {st_mode=S_IFREG|0764, st_size=39232, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Extensions.dll", {st_mode=S_IFREG|0764, st_size=24824, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.Primitives.dll", {st_mode=S_IFREG|0764, st_size=22264, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Reflection.dll", {st_mode=S_IFREG|0764, st_size=22888, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Resources.ResourceManager.dll", {st_mode=S_IFREG|0764, st_size=22272, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.Handles.dll", {st_mode=S_IFREG|0764, st_size=22904, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.InteropServices.dll", {st_mode=S_IFREG|0764, st_size=32152, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.dll", {st_mode=S_IFREG|0764, st_size=39768, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.Extensions.dll", {st_mode=S_IFREG|0764, st_size=22432, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.dll", {st_mode=S_IFREG|0764, st_size=22384, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.dll", {st_mode=S_IFREG|0764, st_size=26488, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Threading.Timer.dll", {st_mode=S_IFREG|0764, st_size=21880, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/mscorlib.ni.dll", {st_mode=S_IFREG|0764, st_size=9446408, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/Microsoft.Win32.Primitives.dll", {st_mode=S_IFREG|0764, st_size=25320, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Console.dll", {st_mode=S_IFREG|0764, st_size=92856, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Diagnostics.Debug.dll", {st_mode=S_IFREG|0764, st_size=40840, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.IO.FileSystem.dll", {st_mode=S_IFREG|0764, st_size=95080, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Net.Primitives.dll", {st_mode=S_IFREG|0764, st_size=307920, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Net.Sockets.dll", {st_mode=S_IFREG|0764, st_size=219848, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Private.Uri.dll", {st_mode=S_IFREG|0764, st_size=125288, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.Extensions.dll", {st_mode=S_IFREG|0764, st_size=73448, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/System.Runtime.InteropServices.RuntimeInformation.dll", {st_mode=S_IFREG|0764, st_size=27112, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld.dll", {st_mode=S_IFREG|0764, st_size=4608, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/mscorlib.ni.dll", {st_mode=S_IFREG|0764, st_size=9446408, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/libcoreclr.so", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\35\7\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0764, st_size=8109616, ...}) = 0
+mmap(NULL, 10297768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed05b28000
+mprotect(0x7fed062ae000, 2097152, PROT_NONE) = 0
+mmap(0x7fed064ae000, 221184, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x786000) = 0x7fed064ae000
+mmap(0x7fed064e4000, 90536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed064e4000
+mprotect(0x7fed07cf8000, 3572, PROT_READ|PROT_WRITE) = 0
+mprotect(0x7fed07cf8000, 3572, PROT_READ) = 0
+mprotect(0x7ffd6d347000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC|PROT_GROWSDOWN) = 0
+close(4)                                = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7fed07ce1000
+close(4)                                = 0
+open("/lib64/librt.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P!\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=43304, ...}) = 0
+mmap(NULL, 2128800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed05920000
+mprotect(0x7fed05927000, 2093056, PROT_NONE) = 0
+mmap(0x7fed05b26000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x6000) = 0x7fed05b26000
+close(4)                                = 0
+open("/lib64/libuuid.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\25\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=19528, ...}) = 0
+mmap(NULL, 2113552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed0571b000
+mprotect(0x7fed0571f000, 2093056, PROT_NONE) = 0
+mmap(0x7fed0591e000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3000) = 0x7fed0591e000
+mmap(0x7fed0591f000, 16, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed0591f000
+close(4)                                = 0
+open("/lib64/libunwind.so.8", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\25\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=44064, ...}) = 0
+mmap(NULL, 2198984, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed05502000
+mprotect(0x7fed0550c000, 2093056, PROT_NONE) = 0
+mmap(0x7fed0570b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x9000) = 0x7fed0570b000
+mmap(0x7fed0570d000, 56776, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed0570d000
+close(4)                                = 0
+open("/lib64/libunwind-x86_64.so.8", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \25\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=64632, ...}) = 0
+mmap(NULL, 2219400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed052e4000
+mprotect(0x7fed052f3000, 2093056, PROT_NONE) = 0
+mmap(0x7fed054f2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xe000) = 0x7fed054f2000
+mmap(0x7fed054f4000, 56712, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed054f4000
+close(4)                                = 0
+mprotect(0x7fed0570b000, 4096, PROT_READ) = 0
+mprotect(0x7fed054f2000, 4096, PROT_READ) = 0
+mprotect(0x7fed0591e000, 4096, PROT_READ) = 0
+mprotect(0x7fed05b26000, 4096, PROT_READ) = 0
+mprotect(0x7fed05b28000, 7888896, PROT_READ|PROT_WRITE) = 0
+mprotect(0x7fed05b28000, 7888896, PROT_READ|PROT_EXEC) = 0
+mprotect(0x7fed064ae000, 180224, PROT_READ) = 0
+open("/home/mtxuser/testHelloWorldbin/libcoreclrtraceptprovider.so", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\205\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0764, st_size=681696, ...}) = 0
+mmap(NULL, 2776856, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed0503e000
+mprotect(0x7fed05094000, 2097152, PROT_NONE) = 0
+mmap(0x7fed05294000, 327680, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x56000) = 0x7fed05294000
+close(4)                                = 0
+open("/lib64/liblttng-ust.so.0", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \227\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=367296, ...}) = 0
+mmap(NULL, 2459616, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed04de5000
+mprotect(0x7fed04e37000, 2093056, PROT_NONE) = 0
+mmap(0x7fed05036000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x51000) = 0x7fed05036000
+close(4)                                = 0
+open("/lib64/liblttng-ust-tracepoint.so.0", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\27\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=44040, ...}) = 0
+mmap(NULL, 2203864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed04bca000
+mprotect(0x7fed04bd3000, 2097152, PROT_NONE) = 0
+mmap(0x7fed04dd3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x9000) = 0x7fed04dd3000
+mmap(0x7fed04dd5000, 61656, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed04dd5000
+close(4)                                = 0
+open("/lib64/liburcu-bp.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\36\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=32112, ...}) = 0
+mmap(NULL, 2126576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed049c2000
+mprotect(0x7fed049c8000, 2097152, PROT_NONE) = 0
+mmap(0x7fed04bc8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x6000) = 0x7fed04bc8000
+close(4)                                = 0
+open("/lib64/liburcu-cds.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\25\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=31872, ...}) = 0
+mmap(NULL, 2125856, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed047ba000
+mprotect(0x7fed047c0000, 2097152, PROT_NONE) = 0
+mmap(0x7fed049c0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x6000) = 0x7fed049c0000
+close(4)                                = 0
+open("/lib64/liburcu-common.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\17\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=15064, ...}) = 0
+mmap(NULL, 2109448, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fed045b6000
+mprotect(0x7fed045b9000, 2093056, PROT_NONE) = 0
+mmap(0x7fed047b8000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x2000) = 0x7fed047b8000
+mmap(0x7fed047b9000, 8, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed047b9000
+close(4)                                = 0
+mprotect(0x7fed047b8000, 4096, PROT_READ) = 0
+mprotect(0x7fed049c0000, 4096, PROT_READ) = 0
+mprotect(0x7fed04bc8000, 4096, PROT_READ) = 0
+mprotect(0x7fed04dd3000, 4096, PROT_READ) = 0
+mprotect(0x7fed05036000, 12288, PROT_READ) = 0
+mprotect(0x7fed05294000, 323584, PROT_READ) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], [], 8) = 0
+mmap(NULL, 2080, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cda000
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+munmap(0x7fed07ce1000, 88269)           = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+geteuid()                               = 1000
+getuid()                                = 1000
+getegid()                               = 1001
+getgid()                                = 1001
+geteuid()                               = 1000
+getuid()                                = 1000
+getegid()                               = 1001
+getgid()                                = 1001
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fed03db5000
+mprotect(0x7fed03db5000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7fed045b4fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fed045b59d0, tls=0x7fed045b5700, child_tidptr=0x7fed045b59d0) = 8529
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fed035b4000
+mprotect(0x7fed035b4000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7fed03db3fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fed03db49d0, tls=0x7fed03db4700, child_tidptr=0x7fed03db49d0) = 8530
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+futex(0x7fed0503d5e0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {1462890175, 79670544}, ffffffff) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+futex(0x7fed0503d6a0, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+futex(0x7fed0503d6a0, FUTEX_WAKE_PRIVATE, 1) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+gettid()                                = 8528
+gettid()                                = 8528
+gettid()                                = 8528
+gettid()                                = 8528
+gettid()                                = 8528
+gettid()                                = 8528
+gettid()                                = 8528
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=4*1024}) = 0
+setrlimit(RLIMIT_NOFILE, {rlim_cur=4*1024, rlim_max=4*1024}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07c9a000
+gettid()                                = 8528
+gettid()                                = 8528
+gettid()                                = 8528
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+gettid()                                = 8528
+pipe([4, 5])                            = 0
+stat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+geteuid()                               = 1000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin/testHelloWorld", {st_mode=S_IFREG|0764, st_size=128566, ...}) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fed02db3000
+mprotect(0x7fed02db3000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7fed035b2fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fed035b39d0, tls=0x7fed035b3700, child_tidptr=0x7fed035b39d0) = 8531
+futex(0x21ede24, FUTEX_WAIT_PRIVATE, 1, NULL) = 0
+futex(0x21eddf8, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x21eddf8, FUTEX_WAKE_PRIVATE, 1) = 0
+rt_sigaction(SIGILL, {0x7fed060c4a80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fed076c79f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTRAP, {0x7fed060c4bc0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fed076c79f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGFPE, {0x7fed060c4cf0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fed076c79f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGBUS, {0x7fed060c4e30, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fed076c79f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSEGV, {0x7fed060c4f80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fed076c79f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {0x7fed060c5120, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fed076c79f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, {0x7fed060c5160, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fed076c79f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_2, {0x7fed060c51a0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fed076c79f0}, NULL, 8) = 0
+rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fed06a8fb20}, {SIG_DFL, [], 0}, 8) = 0
+mmap(0x7fec8bf38000, 2042560512, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fec7a410000
+munmap(0x7fec7a410000, 2042560512)      = 0
+mmap(0x7fec8bf38000, 1908342784, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fec82410000
+munmap(0x7fec82410000, 1908342784)      = 0
+mmap(0x7fec8bf38000, 1774125056, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fec8a410000
+munmap(0x7fec8a410000, 1774125056)      = 0
+mmap(0x7fec8bf38000, 1639907328, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf38000
+dup(0)                                  = 6
+dup(1)                                  = 7
+dup(2)                                  = 8
+gettid()                                = 8528
+open("/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 9
+read(9, "0\n", 8192)                    = 2
+close(9)                                = 0
+mlock(0x7fed064f9000, 4096)             = 0
+gettid()                                = 8528
+mprotect(0x7fed05d50000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mprotect(0x7fed06139000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mprotect(0x7fed06139000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(NULL, 131072, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07c7a000
+mmap(0x7fed07c80000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed07c80000
+brk(NULL)                               = 0x225d000
+brk(0x2284000)                          = 0x2284000
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fed025b2000
+mprotect(0x7fed025b2000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7fed02db1fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fed02db29d0, tls=0x7fed02db2700, child_tidptr=0x7fed02db29d0) = 8532
+futex(0x2215364, FUTEX_WAIT_PRIVATE, 1, NULL) = 0
+futex(0x2215338, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x2215338, FUTEX_WAKE_PRIVATE, 1) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fed01db1000
+mprotect(0x7fed01db1000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7fed025b0fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fed025b19d0, tls=0x7fed025b1700, child_tidptr=0x7fed025b19d0) = 8533
+futex(0x2213264, FUTEX_WAIT_PRIVATE, 1, NULL) = 0
+futex(0x2213238, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x2213238, FUTEX_WAKE_PRIVATE, 1) = 0
+write(11, "*", 1)                       = 1
+open("/proc/8528/stat", O_RDONLY)       = 12
+fstat(12, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cf4000
+read(12, "8528 (testHelloWorld) R 8525 852"..., 1024) = 348
+close(12)                               = 0
+munmap(0x7fed07cf4000, 4096)            = 0
+open("/dev/shm/sem.clrst00002150000000000063e61f", O_RDWR|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+gettid()                                = 8528
+open("/proc/self/maps", O_RDONLY|O_CLOEXEC) = 12
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+fstat(12, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cf4000
+read(12, "00400000-00416000 r-xp 00000000 "..., 1024) = 1024
+read(12, "                [stack:8532]\n7fe"..., 1024) = 1024
+read(12, "c0000-7fed049c1000 r--p 00006000"..., 1024) = 1024
+read(12, "                   /usr/lib64/li"..., 1024) = 1024
+read(12, "/testHelloWorldbin/libcoreclrtra"..., 1024) = 1024
+read(12, "r-xp 00000000 fd:00 1708007     "..., 1024) = 1024
+read(12, "     /home/mtxuser/testHelloWorl"..., 1024) = 1024
+read(12, "ostpolicy.so\n7fed067bb000-7fed06"..., 1024) = 1024
+read(12, "7fed06e16000-7fed06e18000 rw-p 0"..., 1024) = 1024
+read(12, "0 fd:00 1706765                 "..., 1024) = 1024
+read(12, "0 fd:00 1707381                 "..., 1024) = 1024
+read(12, "64/ld-2.22.so\n7fed07cfa000-7fed0"..., 1024) = 437
+close(12)                               = 0
+munmap(0x7fed07cf4000, 4096)            = 0
+sched_getaffinity(8528, 32, [1, 21f4e20, 676775626544fdfd, 617474417265, 30, 1e1, 7fed064d9450, 7fed00000001]) = 8
+open("/proc/self/maps", O_RDONLY|O_CLOEXEC) = 12
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+fstat(12, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cf4000
+read(12, "00400000-00416000 r-xp 00000000 "..., 1024) = 1024
+read(12, "                [stack:8532]\n7fe"..., 1024) = 1024
+read(12, "c0000-7fed049c1000 r--p 00006000"..., 1024) = 1024
+read(12, "                   /usr/lib64/li"..., 1024) = 1024
+read(12, "/testHelloWorldbin/libcoreclrtra"..., 1024) = 1024
+read(12, "r-xp 00000000 fd:00 1708007     "..., 1024) = 1024
+read(12, "     /home/mtxuser/testHelloWorl"..., 1024) = 1024
+read(12, "ostpolicy.so\n7fed067bb000-7fed06"..., 1024) = 1024
+read(12, "7fed06e16000-7fed06e18000 rw-p 0"..., 1024) = 1024
+read(12, "0 fd:00 1706765                 "..., 1024) = 1024
+read(12, "0 fd:00 1707381                 "..., 1024) = 1024
+read(12, "64/ld-2.22.so\n7fed07cfa000-7fed0"..., 1024) = 437
+close(12)                               = 0
+munmap(0x7fed07cf4000, 4096)            = 0
+sched_getaffinity(8528, 32, [1, 0, 0, 0, 30, 1e1, 7fed064d9450, 7fed00000001]) = 8
+gettid()                                = 8528
+gettid()                                = 8528
+gettid()                                = 8528
+mmap(NULL, 402661376, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fec73f36000
+brk(NULL)                               = 0x2284000
+brk(0x22ab000)                          = 0x22ab000
+mmap(NULL, 397312, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07c19000
+mmap(0x7fed07c19000, 397312, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed07c19000
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07b18000
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 12
+fstat(12, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cf4000
+read(12, "MemTotal:        1017252 kB\nMemF"..., 1024) = 1024
+close(12)                               = 0
+munmap(0x7fed07cf4000, 4096)            = 0
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 12
+fstat(12, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07cf4000
+read(12, "MemTotal:        1017252 kB\nMemF"..., 1024) = 1024
+close(12)                               = 0
+munmap(0x7fed07cf4000, 4096)            = 0
+mmap(0x7fec73f36000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec73f36000
+mmap(0x7fec83f36000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec83f36000
+mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed01d8c000
+gettid()                                = 8528
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fed0158b000
+mprotect(0x7fed0158b000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7fed01d8afb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fed01d8b9d0, tls=0x7fed01d8b700, child_tidptr=0x7fed01d8b9d0) = 8534
+futex(0x21fbf44, FUTEX_WAIT_PRIVATE, 1, NULL) = 0
+futex(0x21fbf18, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x21fbf18, FUTEX_WAKE_PRIVATE, 1) = 0
+write(11, "*", 1)                       = 1
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/mscorlib.ni.dll", {st_mode=S_IFREG|0764, st_size=9446408, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/mscorlib.ni.dll", O_RDONLY) = 12
+flock(12, LOCK_SH|LOCK_NB)              = 0
+fcntl(12, F_SETFD, FD_CLOEXEC)          = 0
+lseek(12, 0, SEEK_SET)                  = 0
+read(12, "MZ\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 64) = 64
+lseek(12, 128, SEEK_SET)                = 128
+read(12, "PE\0\0\35\375\4\0\6\373'W\0\0\0\0\0\0\0\0\360\0\" \v\2\v\0\0\0\0\0"..., 264) = 264
+mmap(0x7fec8c08f000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED, 12, 0) = 0x7fec8c08f000
+mmap(0x7fec8c090000, 1540096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 12, 0x1000) = 0x7fec8c090000
+mmap(0x7fec8c208000, 131072, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 12, 0x179000) = 0x7fec8c208000
+mmap(0x7fec8c228000, 7581696, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 12, 0x199000) = 0x7fec8c228000
+mmap(0x7fec8c963000, 180224, PROT_READ, MAP_PRIVATE|MAP_FIXED, 12, 0x8d4000) = 0x7fec8c963000
+mprotect(0x7fec8c228000, 7581696, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mprotect(0x7fec8c228000, 7581696, PROT_READ|PROT_EXEC) = 0
+mmap(0x7fec8bf7f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf7f000
+mmap(0x7fec8bf6f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf6f000
+mmap(0x7fec8bf82000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf82000
+mmap(0x7fec83f38000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec83f38000
+mmap(0x7fec8bf75000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf75000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07ce5000
+mmap(0x7fed07ce5000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed07ce5000
+mmap(0x7fec73f38000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec73f38000
+mmap(0x7fec8c055000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c055000
+mprotect(0x7fec8c055000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(0x7fec8c02f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c02f000
+mprotect(0x7fec8c02f000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(0x7fec8c98f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c98f000
+mprotect(0x7fec8c98f000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(0x7fec8bf70000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf70000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07b08000
+mmap(0x7fed07b08000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed07b08000
+open("/home/mtxuser/testHelloWorldbin/System.Globalization.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 10
+fstat(10, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 10, 0) = 0x7fed01575000
+close(10)                               = 0
+open("/lib64/tls/x86_64/System.Globalization.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/lib64/tls/x86_64", 0x7ffd6d341620) = -1 ENOENT (No such file or directory)
+open("/lib64/tls/System.Globalization.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/lib64/tls", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0
+open("/lib64/x86_64/System.Globalization.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/lib64/x86_64", 0x7ffd6d341620)   = -1 ENOENT (No such file or directory)
+open("/lib64/System.Globalization.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/lib64", {st_mode=S_IFDIR|0555, st_size=73728, ...}) = 0
+open("/usr/lib64/tls/x86_64/System.Globalization.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/tls/x86_64", 0x7ffd6d341620) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/tls/System.Globalization.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/tls", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0
+open("/usr/lib64/x86_64/System.Globalization.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/x86_64", 0x7ffd6d341620) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/System.Globalization.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64", {st_mode=S_IFDIR|0555, st_size=73728, ...}) = 0
+munmap(0x7fed01575000, 88269)           = 0
+open("/home/mtxuser/testHelloWorldbin/libSystem.Globalization.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 10
+fstat(10, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 10, 0) = 0x7fed01575000
+close(10)                               = 0
+open("/lib64/tls/libSystem.Globalization.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/lib64/libSystem.Globalization.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/tls/libSystem.Globalization.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/libSystem.Globalization.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+munmap(0x7fed01575000, 88269)           = 0
+open("/home/mtxuser/testHelloWorldbin/System.Globalization.Native.so", O_RDONLY|O_CLOEXEC) = 10
+read(10, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320H\0\0\0\0\0\0"..., 832) = 832
+fstat(10, {st_mode=S_IFREG|0764, st_size=56896, ...}) = 0
+mmap(NULL, 2151880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 10, 0) = 0x7fed0137d000
+mprotect(0x7fed0138a000, 2093056, PROT_NONE) = 0
+mmap(0x7fed01589000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 10, 0xc000) = 0x7fed01589000
+close(10)                               = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 10
+fstat(10, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 10, 0) = 0x7fed01367000
+close(10)                               = 0
+open("/usr/lib64/libicu50/libicuuc.so.50", O_RDONLY|O_CLOEXEC) = 10
+read(10, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220.\5\0\0\0\0\0"..., 832) = 832
+fstat(10, {st_mode=S_IFREG|0755, st_size=1538680, ...}) = 0
+mmap(NULL, 3645408, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 10, 0) = 0x7fed00fed000
+mprotect(0x7fed01152000, 2093056, PROT_NONE) = 0
+mmap(0x7fed01351000, 73728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 10, 0x164000) = 0x7fed01351000
+mmap(0x7fed01363000, 16352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed01363000
+close(10)                               = 0
+open("/usr/lib64/libicu50/libicui18n.so.50", O_RDONLY|O_CLOEXEC) = 10
+read(10, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \242\t\0\0\0\0\0"..., 832) = 832
+fstat(10, {st_mode=S_IFREG|0755, st_size=2097792, ...}) = 0
+mmap(NULL, 4191168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 10, 0) = 0x7fed00bed000
+mprotect(0x7fed00dde000, 2097152, PROT_NONE) = 0
+mmap(0x7fed00fde000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 10, 0x1f1000) = 0x7fed00fde000
+mmap(0x7fed00fec000, 960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00fec000
+close(10)                               = 0
+open("/usr/lib64/libicu50/libicudata.so.50", O_RDONLY|O_CLOEXEC) = 10
+read(10, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\5\0\0\0\0\0\0"..., 832) = 832
+fstat(10, {st_mode=S_IFREG|0755, st_size=20789912, ...}) = 0
+mmap(NULL, 22884400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 10, 0) = 0x7fecf2a2c000
+mprotect(0x7fecf3dff000, 2093056, PROT_NONE) = 0
+mmap(0x7fecf3ffe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 10, 0x13d2000) = 0x7fecf3ffe000
+close(10)                               = 0
+mprotect(0x7fecf3ffe000, 4096, PROT_READ) = 0
+mprotect(0x7fed01351000, 69632, PROT_READ) = 0
+mprotect(0x7fed00fde000, 49152, PROT_READ) = 0
+mprotect(0x7fed01589000, 4096, PROT_READ) = 0
+munmap(0x7fed01367000, 88269)           = 0
+mmap(0x7fec8c02b000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c02b000
+mprotect(0x7fec8c02b000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(0x7fec8c01f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c01f000
+open("/dev/random", O_RDONLY|O_NONBLOCK) = 10
+read(10, "\250", 1)                     = 1
+read(10, "J", 1)                        = 1
+read(10, "\271", 1)                     = 1
+read(10, "\307", 1)                     = 1
+read(10, "K", 1)                        = 1
+read(10, "1", 1)                        = 1
+read(10, "K", 1)                        = 1
+read(10, "Q", 1)                        = 1
+close(10)                               = 0
+mmap(0x7fec8c025000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c025000
+open("/home/mtxuser/testHelloWorldbin/libcoreclr", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 10
+fstat(10, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 10, 0) = 0x7fed01367000
+close(10)                               = 0
+open("/lib64/tls/libcoreclr", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/lib64/libcoreclr", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/tls/libcoreclr", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/libcoreclr", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+munmap(0x7fed01367000, 88269)           = 0
+open("/home/mtxuser/testHelloWorldbin/liblibcoreclr.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 10
+fstat(10, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 10, 0) = 0x7fed01367000
+close(10)                               = 0
+open("/lib64/tls/liblibcoreclr.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/lib64/liblibcoreclr.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/tls/liblibcoreclr.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/liblibcoreclr.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+munmap(0x7fed01367000, 88269)           = 0
+mmap(0x7fec73f48000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec73f48000
+mmap(0x7fec8bf76000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf76000
+mmap(NULL, 258048, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00bae000
+brk(NULL)                               = 0x22ab000
+brk(0x22cc000)                          = 0x22cc000
+brk(NULL)                               = 0x22cc000
+brk(0x22ed000)                          = 0x22ed000
+brk(NULL)                               = 0x22ed000
+brk(0x230e000)                          = 0x230e000
+brk(NULL)                               = 0x230e000
+brk(0x232f000)                          = 0x232f000
+brk(NULL)                               = 0x232f000
+brk(0x2350000)                          = 0x2350000
+mmap(NULL, 282624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00b69000
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00a68000
+mmap(NULL, 286720, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00a22000
+mmap(NULL, 528384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed009a1000
+brk(NULL)                               = 0x2350000
+brk(0x2378000)                          = 0x2378000
+munmap(0x7fed009a1000, 528384)          = 0
+munmap(0x7fed00a22000, 286720)          = 0
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00967000
+brk(NULL)                               = 0x2378000
+brk(0x23d4000)                          = 0x23d4000
+brk(NULL)                               = 0x23d4000
+brk(0x23f5000)                          = 0x23f5000
+brk(NULL)                               = 0x23f5000
+brk(0x241f000)                          = 0x241f000
+munmap(0x7fed00967000, 1052672)         = 0
+munmap(0x7fed00a68000, 1052672)         = 0
+munmap(0x7fed00b69000, 282624)          = 0
+munmap(0x7fed00bae000, 258048)          = 0
+stat("/opt/corebreadcrumbs", 0x7ffd6d346268) = -1 ENOENT (No such file or directory)
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/testHelloWorld.dll", {st_mode=S_IFREG|0764, st_size=4608, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/testHelloWorld.dll", O_RDONLY) = 10
+flock(10, LOCK_SH|LOCK_NB)              = 0
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0
+fstat(10, {st_mode=S_IFREG|0764, st_size=4608, ...}) = 0
+dup(10)                                 = 11
+fstat(11, {st_mode=S_IFREG|0764, st_size=4608, ...}) = 0
+mmap(NULL, 4608, PROT_READ, MAP_SHARED, 11, 0) = 0x7fed07ce3000
+open("/dev/zero", O_RDWR)               = 13
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_SHARED, 13, 0) = 0x7fed07b00000
+mprotect(0x7fed07b00000, 4096, PROT_READ) = 0
+mprotect(0x7fed07b02000, 4096, PROT_READ) = 0
+mprotect(0x7fed07b04000, 4096, PROT_READ) = 0
+mprotect(0x7fed07b06000, 4096, PROT_READ) = 0
+munmap(0x7fed07ce3000, 4608)            = 0
+close(11)                               = 0
+mmap(0x7fec8bf83000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf83000
+mmap(0x7fec8bf80000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf80000
+gettid()                                = 8528
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.Runtime.dll", {st_mode=S_IFREG|0764, st_size=39768, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.Runtime.dll", O_RDONLY) = 11
+flock(11, LOCK_SH|LOCK_NB)              = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+fstat(11, {st_mode=S_IFREG|0764, st_size=39768, ...}) = 0
+dup(11)                                 = 14
+fstat(14, {st_mode=S_IFREG|0764, st_size=39768, ...}) = 0
+mmap(NULL, 39768, PROT_READ, MAP_SHARED, 14, 0) = 0x7fed01373000
+open("/dev/zero", O_RDWR)               = 15
+mmap(NULL, 49152, PROT_READ|PROT_WRITE, MAP_SHARED, 15, 0) = 0x7fed01367000
+mprotect(0x7fed01367000, 4096, PROT_READ) = 0
+mprotect(0x7fed01369000, 20480, PROT_READ) = 0
+mprotect(0x7fed0136f000, 4096, PROT_READ) = 0
+mprotect(0x7fed01371000, 4096, PROT_READ) = 0
+munmap(0x7fed01373000, 39768)           = 0
+close(14)                               = 0
+mmap(0x7fec8c9cf000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9cf000
+mmap(0x7fec8c9d0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9d0000
+mmap(0x7fec8c9d2000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9d2000
+mmap(0x7fec8c9d3000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9d3000
+mmap(0x7fec8c9d4000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9d4000
+mmap(0x7fec8bf84000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf84000
+mmap(0x7fec8c9df000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9df000
+mprotect(0x7fec8c9df000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(0x7fec8c9d5000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9d5000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.Console.dll", {st_mode=S_IFREG|0764, st_size=92856, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.Console.dll", O_RDONLY) = 14
+flock(14, LOCK_SH|LOCK_NB)              = 0
+fcntl(14, F_SETFD, FD_CLOEXEC)          = 0
+fstat(14, {st_mode=S_IFREG|0764, st_size=92856, ...}) = 0
+dup(14)                                 = 16
+fstat(16, {st_mode=S_IFREG|0764, st_size=92856, ...}) = 0
+mmap(NULL, 92856, PROT_READ, MAP_SHARED, 16, 0) = 0x7fed00bd6000
+open("/dev/zero", O_RDWR)               = 17
+mmap(NULL, 106496, PROT_READ|PROT_WRITE, MAP_SHARED, 17, 0) = 0x7fed00bbc000
+mprotect(0x7fed00bbc000, 4096, PROT_READ) = 0
+mprotect(0x7fed00bbe000, 77824, PROT_READ) = 0
+mprotect(0x7fed00bd2000, 4096, PROT_READ) = 0
+mprotect(0x7fed00bd4000, 4096, PROT_READ) = 0
+munmap(0x7fed00bd6000, 92856)           = 0
+close(16)                               = 0
+mmap(0x7fec8c9d6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9d6000
+mmap(0x7fec8c9d8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9d8000
+mmap(0x7fec8c9da000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9da000
+mmap(0x7fec8bf85000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf85000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.IO.dll", {st_mode=S_IFREG|0764, st_size=39232, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.IO.dll", O_RDONLY) = 16
+flock(16, LOCK_SH|LOCK_NB)              = 0
+fcntl(16, F_SETFD, FD_CLOEXEC)          = 0
+fstat(16, {st_mode=S_IFREG|0764, st_size=39232, ...}) = 0
+dup(16)                                 = 18
+fstat(18, {st_mode=S_IFREG|0764, st_size=39232, ...}) = 0
+mmap(NULL, 39232, PROT_READ, MAP_SHARED, 18, 0) = 0x7fed01373000
+open("/dev/zero", O_RDWR)               = 19
+mmap(NULL, 49152, PROT_READ|PROT_WRITE, MAP_SHARED, 19, 0) = 0x7fed00be1000
+mprotect(0x7fed00be1000, 4096, PROT_READ) = 0
+mprotect(0x7fed00be3000, 20480, PROT_READ) = 0
+mprotect(0x7fed00be9000, 4096, PROT_READ) = 0
+mprotect(0x7fed00beb000, 4096, PROT_READ) = 0
+munmap(0x7fed01373000, 39232)           = 0
+close(18)                               = 0
+mmap(0x7fec8c9db000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9db000
+mmap(0x7fec8c9dc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9dc000
+mmap(0x7fec8bf86000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf86000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.Threading.dll", {st_mode=S_IFREG|0764, st_size=50016, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.Threading.dll", O_RDONLY) = 18
+flock(18, LOCK_SH|LOCK_NB)              = 0
+fcntl(18, F_SETFD, FD_CLOEXEC)          = 0
+fstat(18, {st_mode=S_IFREG|0764, st_size=50016, ...}) = 0
+dup(18)                                 = 20
+fstat(20, {st_mode=S_IFREG|0764, st_size=50016, ...}) = 0
+mmap(NULL, 50016, PROT_READ, MAP_SHARED, 20, 0) = 0x7fed00baf000
+open("/dev/zero", O_RDWR)               = 21
+mmap(NULL, 57344, PROT_READ|PROT_WRITE, MAP_SHARED, 21, 0) = 0x7fed00ba1000
+mprotect(0x7fed00ba1000, 4096, PROT_READ) = 0
+mprotect(0x7fed00ba3000, 32768, PROT_READ) = 0
+mprotect(0x7fed00bab000, 4096, PROT_READ) = 0
+mprotect(0x7fed00bad000, 4096, PROT_READ) = 0
+munmap(0x7fed00baf000, 50016)           = 0
+close(20)                               = 0
+mmap(0x7fec8c9de000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9de000
+mmap(0x7fec8ca1f000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca1f000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+mmap(0x7fed00b91000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+munmap(0x7fed00b91000, 65536)           = 0
+mmap(0x7fec8bf87000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf87000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+mmap(0x7fed00b91000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00b81000
+mmap(0x7fed00b81000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00b81000
+munmap(0x7fed00b91000, 65536)           = 0
+munmap(0x7fed00b81000, 65536)           = 0
+mmap(0x7fec8c9e0000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9e0000
+mprotect(0x7fec8c9e0000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(0x7fec8ca22000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca22000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.Runtime.Handles.dll", {st_mode=S_IFREG|0764, st_size=22904, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.Runtime.Handles.dll", O_RDONLY) = 20
+flock(20, LOCK_SH|LOCK_NB)              = 0
+fcntl(20, F_SETFD, FD_CLOEXEC)          = 0
+fstat(20, {st_mode=S_IFREG|0764, st_size=22904, ...}) = 0
+dup(20)                                 = 22
+fstat(22, {st_mode=S_IFREG|0764, st_size=22904, ...}) = 0
+mmap(NULL, 22904, PROT_READ, MAP_SHARED, 22, 0) = 0x7fed07afa000
+open("/dev/zero", O_RDWR)               = 23
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_SHARED, 23, 0) = 0x7fed01375000
+mprotect(0x7fed01375000, 4096, PROT_READ) = 0
+mprotect(0x7fed01377000, 4096, PROT_READ) = 0
+mprotect(0x7fed01379000, 4096, PROT_READ) = 0
+mprotect(0x7fed0137b000, 4096, PROT_READ) = 0
+munmap(0x7fed07afa000, 22904)           = 0
+close(22)                               = 0
+mmap(0x7fec8bf88000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf88000
+mmap(0x7fec8ca23000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca23000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.IO.FileSystem.Primitives.dll", {st_mode=S_IFREG|0764, st_size=21920, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.IO.FileSystem.Primitives.dll", O_RDONLY) = 22
+flock(22, LOCK_SH|LOCK_NB)              = 0
+fcntl(22, F_SETFD, FD_CLOEXEC)          = 0
+fstat(22, {st_mode=S_IFREG|0764, st_size=21920, ...}) = 0
+dup(22)                                 = 24
+fstat(24, {st_mode=S_IFREG|0764, st_size=21920, ...}) = 0
+mmap(NULL, 21920, PROT_READ, MAP_SHARED, 24, 0) = 0x7fed07afa000
+open("/dev/zero", O_RDWR)               = 25
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_SHARED, 25, 0) = 0x7fed00bd9000
+mprotect(0x7fed00bd9000, 4096, PROT_READ) = 0
+mprotect(0x7fed00bdb000, 4096, PROT_READ) = 0
+mprotect(0x7fed00bdd000, 4096, PROT_READ) = 0
+mprotect(0x7fed00bdf000, 4096, PROT_READ) = 0
+munmap(0x7fed07afa000, 21920)           = 0
+close(24)                               = 0
+mmap(0x7fec8bf89000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf89000
+mmap(0x7fec8ca25000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca25000
+mmap(0x7fec8ca27000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca27000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+mmap(0x7fed00b91000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+munmap(0x7fed00b91000, 65536)           = 0
+mmap(0x7fec8bf8a000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf8a000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+mmap(0x7fed00b91000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+munmap(0x7fed00b91000, 65536)           = 0
+mmap(0x7fec8c9e1000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9e1000
+mprotect(0x7fec8c9e1000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+mmap(0x7fed00b91000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00b91000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00b81000
+mmap(0x7fed00b81000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00b81000
+munmap(0x7fed00b91000, 65536)           = 0
+munmap(0x7fed00b81000, 65536)           = 0
+open("/home/mtxuser/testHelloWorldbin/System.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mtxuser/testHelloWorldbin/System.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 24
+fstat(24, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 24, 0) = 0x7fed00b8b000
+close(24)                               = 0
+open("/lib64/tls/System.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/lib64/System.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/tls/System.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/System.Native", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+munmap(0x7fed00b8b000, 88269)           = 0
+open("/home/mtxuser/testHelloWorldbin/libSystem.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mtxuser/testHelloWorldbin/libSystem.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 24
+fstat(24, {st_mode=S_IFREG|0644, st_size=88269, ...}) = 0
+mmap(NULL, 88269, PROT_READ, MAP_PRIVATE, 24, 0) = 0x7fed00b8b000
+close(24)                               = 0
+open("/lib64/tls/libSystem.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/lib64/libSystem.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/tls/libSystem.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/libSystem.Native.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+munmap(0x7fed00b8b000, 88269)           = 0
+open("/home/mtxuser/testHelloWorldbin/System.Native.so", O_RDONLY|O_CLOEXEC) = 24
+read(24, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220V\0\0\0\0\0\0"..., 832) = 832
+fstat(24, {st_mode=S_IFREG|0764, st_size=78748, ...}) = 0
+mmap(NULL, 2156384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 24, 0) = 0x7fed00992000
+mprotect(0x7fed0099f000, 2097152, PROT_NONE) = 0
+mmap(0x7fed00b9f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 24, 0xd000) = 0x7fed00b9f000
+close(24)                               = 0
+mprotect(0x7fed00b9f000, 4096, PROT_READ) = 0
+dup(1)                                  = 24
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.Runtime.InteropServices.dll", {st_mode=S_IFREG|0764, st_size=32152, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.Runtime.InteropServices.dll", O_RDONLY) = 26
+flock(26, LOCK_SH|LOCK_NB)              = 0
+fcntl(26, F_SETFD, FD_CLOEXEC)          = 0
+fstat(26, {st_mode=S_IFREG|0764, st_size=32152, ...}) = 0
+dup(26)                                 = 27
+fstat(27, {st_mode=S_IFREG|0764, st_size=32152, ...}) = 0
+mmap(NULL, 32152, PROT_READ, MAP_SHARED, 27, 0) = 0x7fed00bb4000
+open("/dev/zero", O_RDWR)               = 28
+mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_SHARED, 28, 0) = 0x7fed00988000
+mprotect(0x7fed00988000, 4096, PROT_READ) = 0
+mprotect(0x7fed0098a000, 12288, PROT_READ) = 0
+mprotect(0x7fed0098e000, 4096, PROT_READ) = 0
+mprotect(0x7fed00990000, 4096, PROT_READ) = 0
+munmap(0x7fed00bb4000, 32152)           = 0
+close(27)                               = 0
+mmap(0x7fec8bf8b000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf8b000
+mmap(0x7fec8ca28000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca28000
+mmap(0x7fec8ca29000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca29000
+mmap(0x7fec8ca2b000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca2b000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00978000
+mmap(0x7fed00978000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00978000
+munmap(0x7fed00978000, 65536)           = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00978000
+mmap(0x7fed00978000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00978000
+munmap(0x7fed00978000, 65536)           = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00978000
+mmap(0x7fed00978000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00978000
+munmap(0x7fed00978000, 65536)           = 0
+fstat(24, {st_mode=S_IFREG|0664, st_size=101035, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.dll", {st_mode=S_IFREG|0764, st_size=22384, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.dll", O_RDONLY) = 27
+flock(27, LOCK_SH|LOCK_NB)              = 0
+fcntl(27, F_SETFD, FD_CLOEXEC)          = 0
+fstat(27, {st_mode=S_IFREG|0764, st_size=22384, ...}) = 0
+dup(27)                                 = 29
+fstat(29, {st_mode=S_IFREG|0764, st_size=22384, ...}) = 0
+mmap(NULL, 22384, PROT_READ, MAP_SHARED, 29, 0) = 0x7fed07afa000
+open("/dev/zero", O_RDWR)               = 30
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_SHARED, 30, 0) = 0x7fed00bb4000
+mprotect(0x7fed00bb4000, 4096, PROT_READ) = 0
+mprotect(0x7fed00bb6000, 4096, PROT_READ) = 0
+mprotect(0x7fed00bb8000, 4096, PROT_READ) = 0
+mprotect(0x7fed00bba000, 4096, PROT_READ) = 0
+munmap(0x7fed07afa000, 22384)           = 0
+close(29)                               = 0
+mmap(0x7fec8ca2f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca2f000
+mmap(0x7fec8ca2c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca2c000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.dll", {st_mode=S_IFREG|0764, st_size=26488, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.Threading.Tasks.dll", O_RDONLY) = 29
+flock(29, LOCK_SH|LOCK_NB)              = 0
+fcntl(29, F_SETFD, FD_CLOEXEC)          = 0
+fstat(29, {st_mode=S_IFREG|0764, st_size=26488, ...}) = 0
+dup(29)                                 = 31
+fstat(31, {st_mode=S_IFREG|0764, st_size=26488, ...}) = 0
+mmap(NULL, 26488, PROT_READ, MAP_SHARED, 31, 0) = 0x7fed07af9000
+open("/dev/zero", O_RDWR)               = 32
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_SHARED, 32, 0) = 0x7fed00980000
+mprotect(0x7fed00980000, 4096, PROT_READ) = 0
+mprotect(0x7fed00982000, 8192, PROT_READ) = 0
+mprotect(0x7fed00984000, 4096, PROT_READ) = 0
+mprotect(0x7fed00986000, 4096, PROT_READ) = 0
+munmap(0x7fed07af9000, 26488)           = 0
+close(31)                               = 0
+mmap(0x7fec8ca30000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca30000
+mmap(0x7fec8ca2e000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca2e000
+mmap(0x7fec8ca3f000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca3f000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00970000
+mmap(0x7fed00970000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00970000
+munmap(0x7fed00970000, 65536)           = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00970000
+mmap(0x7fed00970000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00970000
+munmap(0x7fed00970000, 65536)           = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.Extensions.dll", {st_mode=S_IFREG|0764, st_size=22432, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.Text.Encoding.Extensions.dll", O_RDONLY) = 31
+flock(31, LOCK_SH|LOCK_NB)              = 0
+fcntl(31, F_SETFD, FD_CLOEXEC)          = 0
+fstat(31, {st_mode=S_IFREG|0764, st_size=22432, ...}) = 0
+dup(31)                                 = 33
+fstat(33, {st_mode=S_IFREG|0764, st_size=22432, ...}) = 0
+mmap(NULL, 22432, PROT_READ, MAP_SHARED, 33, 0) = 0x7fed07afa000
+open("/dev/zero", O_RDWR)               = 34
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_SHARED, 34, 0) = 0x7fed00978000
+mprotect(0x7fed00978000, 4096, PROT_READ) = 0
+mprotect(0x7fed0097a000, 4096, PROT_READ) = 0
+mprotect(0x7fed0097c000, 4096, PROT_READ) = 0
+mprotect(0x7fed0097e000, 4096, PROT_READ) = 0
+munmap(0x7fed07afa000, 22432)           = 0
+close(33)                               = 0
+mmap(0x7fec8ca31000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca31000
+mmap(0x7fec8ca42000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca42000
+mmap(0x7fec8ca44000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca44000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+munmap(0x7fed00968000, 65536)           = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/mtxuser", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/home/mtxuser/testHelloWorldbin", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+stat("/home/mtxuser/testHelloWorldbin/System.Runtime.Extensions.dll", {st_mode=S_IFREG|0764, st_size=73448, ...}) = 0
+open("/home/mtxuser/testHelloWorldbin/System.Runtime.Extensions.dll", O_RDONLY) = 33
+flock(33, LOCK_SH|LOCK_NB)              = 0
+fcntl(33, F_SETFD, FD_CLOEXEC)          = 0
+fstat(33, {st_mode=S_IFREG|0764, st_size=73448, ...}) = 0
+dup(33)                                 = 35
+fstat(35, {st_mode=S_IFREG|0764, st_size=73448, ...}) = 0
+mmap(NULL, 73448, PROT_READ, MAP_SHARED, 35, 0) = 0x7fed00966000
+open("/dev/zero", O_RDWR)               = 36
+mmap(NULL, 81920, PROT_READ|PROT_WRITE, MAP_SHARED, 36, 0) = 0x7fed00952000
+mprotect(0x7fed00952000, 4096, PROT_READ) = 0
+mprotect(0x7fed00954000, 57344, PROT_READ) = 0
+mprotect(0x7fed00962000, 4096, PROT_READ) = 0
+mprotect(0x7fed00964000, 4096, PROT_READ) = 0
+munmap(0x7fed00966000, 73448)           = 0
+close(35)                               = 0
+mmap(0x7fec8ca45000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca45000
+mmap(0x7fec8ca46000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca46000
+mmap(0x7fec8ca32000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca32000
+mmap(0x7fec8ca48000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8ca48000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00942000
+mmap(0x7fed00942000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00942000
+munmap(0x7fed00968000, 65536)           = 0
+munmap(0x7fed00942000, 65536)           = 0
+mmap(0x7fec8bf7c000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8bf7c000
+mprotect(0x7fec8bf7c000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(0x7fec8c9e2000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fec8c9e2000
+mprotect(0x7fec8c9e2000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+munmap(0x7fed00968000, 65536)           = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+munmap(0x7fed00968000, 65536)           = 0
+gettid()                                = 8528
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+munmap(0x7fed00968000, 65536)           = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+munmap(0x7fed00968000, 65536)           = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00942000
+mmap(0x7fed00942000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00942000
+munmap(0x7fed00968000, 65536)           = 0
+munmap(0x7fed00942000, 65536)           = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+munmap(0x7fed00968000, 65536)           = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+munmap(0x7fed00968000, 65536)           = 0
+mmap(NULL, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+mmap(0x7fed00968000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fed00968000
+munmap(0x7fed00968000, 65536)           = 0
+write(24, "Hello World!\n", 13Hello World!
+)         = 13
+gettid()                                = 8528
+gettid()                                = 8528
+futex(0x21fbfec, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x21fbfe8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x21fbfc0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x21fbfec, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x21fbfe8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x21fbfc0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x21fbfec, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x21fbfe8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x21fbfc0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x21fbfec, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x21fbfe8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x21fbfc0, FUTEX_WAKE_PRIVATE, 1) = 1
+munmap(0x7fed07b08000, 65536)           = 0
+open("/proc/8528/stat", O_RDONLY)       = 35
+fstat(35, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07ce4000
+read(35, "8528 (testHelloWorld) R 8525 852"..., 1024) = 350
+close(35)                               = 0
+munmap(0x7fed07ce4000, 4096)            = 0
+unlink("/tmp/clr-debug-pipe-8528-6546975-in") = 0
+open("/proc/8528/stat", O_RDONLY)       = 35
+fstat(35, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fed07ce4000
+read(35, "8528 (testHelloWorld) R 8525 852"..., 1024) = 350
+close(35)                               = 0
+munmap(0x7fed07ce4000, 4096)            = 0
+unlink("/tmp/clr-debug-pipe-8528-6546975-out") = 0
+futex(0x221330c, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x2213308, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x22132e0, FUTEX_WAKE_PRIVATE, 1) = 1
+gettid()                                = 8528
+write(5, "\3", 1)                       = 1
+munmap(0x7fed064fb000, 2889496)         = 0
+munmap(0x7fed067bd000, 2741848)         = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [HUP ABRT USR1 USR2 PIPE ALRM TTIN TTOU URG XCPU XFSZ VTALRM WINCH IO SYS], NULL, 8) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
